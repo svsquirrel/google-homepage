@@ -1,0 +1,171 @@
+
+
+
+body {
+    font-size: 14;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff;
+    color: #70757a;
+}
+a {
+    color: #70757a;
+    padding: 15px;
+    white-space: nowrap;
+    text-decoration: none;
+    }
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background: blue;
+    display: grid;
+    grid-template-rows: 5% 30% 20% 38% 7%;
+     }
+  
+  header {
+    grid-row: 1 / 2;
+    background: rgb(250, 250, 248);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+ 
+  header .left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+
+  }
+
+  header .right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 2;
+  }
+  
+  main {
+
+    grid-row: 2 / 3;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .googlogo {
+    width: 280px;
+    height: 100px;
+  }
+  searcharea {   
+    grid-row: 3 / 4;
+    background: #fff;
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+   }
+
+  .searchbox{ 
+   
+    width: auto;
+    max-width: 584px;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 2;
+    height: 44px;
+    margin: 0 auto;
+    
+    } 
+  .searchsquare{
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+    }
+
+    
+  .searchdataarea{
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    }
+
+   .magnifier{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    margin-top: -5px;
+    z-index: 1;
+   }  
+
+.buttonlooks{  
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttonlocale{
+    margin-left: 42%;
+
+}
+ lower{
+   grid-row: 4 / 5;
+   background: #fff;
+  }
+     
+  footer {
+    
+    grid-row: 5 / 6;
+    background: rgb(250, 250, 248);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}   
+
+  footer .left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+    }   
+   
+ footer .center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 2;
+    }
+   
+
+footer .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 30%;
+  order: 3;
+  
+}
